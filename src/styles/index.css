@@ -4,9 +4,7 @@ html {
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px; }
-  .container {
-    background: #00b031; } }
+    font-size: 16px; } }
 
 body.signup {
   border-top: 7px solid #fd0002;
