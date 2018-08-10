@@ -1,0 +1,685 @@
+// New color
+$new-color: #ad9a5b;
+$light: #f8f9fa;
+$secondary: #6c757d;
+$dark: #343a40;
+$primary:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$danger:     #dc3545;
+$orange:  #fd7e14;
+$warning:  #ffc107;
+$success:   #28a745;
+$teal:    #20c997;
+$info:    #17a2b8;
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+// Array of colors from _variables.scss
+$theme-colors: (
+  primary: $primary
+) !default;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+ $primary:#00b031;
+ $secondary:#fd0002;
+ $font-family-sans-serif:'Roboto', sans-serif;
+ $font-family-serif:'Slabo 27px', serif;
+
+ html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+  	background:$primary;
+  }
+}
+
+
+body.signup{
+  border-top:7px solid $secondary;
+	background-color:#000;
+  background-size:cover;
+  height:100%;
+  background-image:url('/images/bg@2x.png');
+  background-repeat: no-repeat;
+}
+
+.badge.badge-outline{
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.badge-success.badge-outline{
+  border-color:$success;
+  color:$success;
+}
+
+.badge-primary.badge-outline{
+  border-color:$primary;
+  color:$primary;
+}
+
+.badge-danger.badge-outline{
+  border-color:$danger;
+  color:$danger;
+}
+
+.badge-warning.badge-outline{
+  border-color:$warning;
+  color:$warning;
+}
+
+.badge-info.badge-outline{
+  border-color:$info;
+  color:$info;
+}
+
+.badge-secondary.badge-outline{
+  border-color:$secondary;
+  color:$secondary;
+}
+
+.badge-dark.badge-outline{
+  border-color:$dark;
+  color:$dark;
+}
+
+.alert-notice{
+  border-radius: 0px;
+}
+
+.navbar {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.navbar .navbar-brand img {
+  max-width: 75px;
+}
+
+.navbar .form-control{
+  min-width: 300px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-right:none;
+}
+
+.navbar input:focus{
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-top: 1px solid #ced4da;
+  border-left: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  border-right: none;
+}
+
+.navbar form button{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+#main{
+  padding-top:40px;
+}
+
+.nav-side .nav-link {
+  background-color: $gray-200;
+  color:black;
+  margin-bottom:5px;
+  display:inline-block;
+  cursor:pointer;
+}
+
+.nav-side .nav-link.active {
+  background-color: $secondary;
+  color:white;
+}
+
+.nav-side.nav-arrow .nav-link.active .arrow-right {
+  display:inline;
+  width: 0;
+  height: 0;
+  position: absolute;
+  margin-top: -8px;
+  right: -5px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fd0002;
+}
+
+.nav-side .nav-link .badge {
+  margin-top:4px;
+}
+.nav-tabs .nav-item .nav-link:not(.active) .badge-primary{
+  color:$primary;
+  background-color: transparent;
+  border: 1px solid $primary;
+}
+
+.container.container-settings{
+  padding: 20px 20px 0px 20px;
+  background-color: #f6f6f6
+}
+
+.nav.nav-settings a.nav-link{
+  font-size: 14px;
+}
+
+.row.row-breadcrumbs{
+  min-height:40px;
+  background: #f8f8f8;
+  margin-bottom:1rem;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.row.row-breadcrumbs .btn {
+  font-size: 0.75rem;
+  background-color: white;
+  font-weight: bold;
+  border:1px solid #e9e9e9;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-bottom:2px;
+}
+
+.row.row-breadcrumbs .btn{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row.row-breadcrumbs .btn .fa{
+  padding-left:5px;
+  padding-right:5px;
+  border-radius: 12px;
+  height: 15px;
+  margin-right: 5px;
+  line-height: 15px;
+}
+
+.row.row-breadcrumbs .btn .fa:hover{
+ background-color:#c0392b; 
+ color: white;
+}
+
+.row.row-breadcrumbs .btn.active {
+  color:$secondary;
+}
+
+.col-12.col-venue p.tag{
+  padding-top:20px;
+}
+.col-12.col-venue h3{
+  margin-top:5px;
+  font-weight: bold;
+  margin-bottom:0px;
+}
+
+.col-12.col-venue p{
+  margin-bottom:0px;
+  font-size: 0.9rem;
+}
+
+table.table-venue-breakdown{
+  border:1px solid $gray-500;
+}
+
+table.table-venue-breakdown thead{
+  border-bottom:1px solid $gray-500;
+  border-top:1px solid $gray-500;
+  border-left:none;
+  border-right:none;
+}
+
+table.table-venue-breakdown.table thead th{
+ border:none;
+}
+
+table.table-venue-breakdown thead tr th {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+table.table-venue-breakdown tbody{
+  background-color:#f8f8f8;
+}
+
+table.table-venue-breakdown tbody td {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nav-tabs.nav-tabs-venue{
+  margin-top:40px;
+}
+
+.chart-holder {
+  min-height: 200px;
+}
+
+.card-deck.card-deck-stats .card{
+  min-width: 50px;
+  margin-right: 0px;
+  border-radius: 0px;
+}
+
+.container.container-landing {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 95%;
+}
+
+.card {
+	border-radius:1.25rem;
+}
+
+.text-white{
+	color:#fff;
+}
+
+.text-brand{
+	color:#46b29d;
+	padding:30px;
+	margin-bottom: 20px;
+
+}
+
+.clickable {
+	cursor:pointer;
+}
+
+.clickable.clickable-underline:hover{
+  text-decoration: underline;
+}
+
+.react-draggable{
+  position: relative;
+}
+
+.react-draggable:not(.react-draggable-dragging){
+  -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.react-draggable-dragging {
+  z-index: 1;
+}
+
+.react-draggable:not(.react-draggable-dragging) {
+  z-index: 0;
+}
+
+.account-links{
+	padding:40px;
+}
+
+.btn.btn-xl {
+	padding: 1em;
+	font-size: 1.2rem;
+}
+
+.form-control{
+	border-radius:0px;
+}
+
+.card-deck-plans .card{
+  border-radius: 0px;
+}
+
+.card-deck-plans h1{
+  font-size: 4rem;
+}
+
+.card-deck-plans h2{
+  margin-bottom:30px;
+}
+
+.plan-breakdown-holder {
+  min-height: 300px;
+  background-color: $gray-100;
+}
+
+.plan-breakdown-holder p,.plan-breakdown-holder h1 {
+  padding-top:10px;
+}
+
+.plan-breakdown-holder p{
+  font-weight: 500;
+}
+
+.plan-breakdown-holder .card {
+  border:none;
+}
+
+.plans {
+	padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.plans .selection-indicator{
+	margin-top:10px;
+	border-top: 2px solid #d8d8d8;
+	margin-bottom:20px;
+}
+
+.plans .selection-indicator .arrow-down {
+  width: 0; 
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 20px solid #d8d8d8;
+}
+
+.plans.pro .selection-indicator .arrow-down {
+  margin-left: calc(50% - 30px);
+}
+
+.plans.basic .selection-indicator .arrow-down {
+  margin-left: 15px;
+}
+
+.plans.prem .selection-indicator .arrow-down {
+  margin-left: calc(100% - 75px);
+}
+
+.plans .col {
+  color:$gray-500;
+}
+
+.plans.pro .col-pro {
+  color:black;
+}
+
+.plans.basic .col-basic{
+  color:black;
+}
+
+.plans.prem .col-prem {
+  color:black;
+}
+
+.plans h4,.plans h5,.plans h6{
+	margin-bottom: 0px;
+}
+
+.plans .selected {
+	color:$primary;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.card-signup form{
+	padding:35px;
+}
+
+.card-signup .btn{
+	font-weight: 100;
+}
+
+.source-holder{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+td .source-holder{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.source-holder a, .card-performers a{
+  display: inline-block;
+  height:38px;
+  width:38px;
+  border-radius: 19px;
+  margin-right:7px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  font-size:15px;
+  text-align:center;
+  padding:0px;
+  outline: none;
+  border:1px solid black;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+td .source-holder a{
+  height:20px;
+  width:20px;
+  border-radius: 10px;
+  margin-right:2px;
+}
+
+.source-holder button {
+  margin-top: -30px;
+  margin-left: 30px;
+  border-radius: 12px;
+}
+
+.card-performers a{
+  border-radius: 8px;
+}
+
+.card-performers a .fa {
+  font-size: 24px;
+  line-height: 35px;
+  color: black;
+}
+
+.source-holder a.primary, .source-holder a:hover, .card-performers a:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.source-holder a:hover,.source-holder a:focus,.source-holder a:active{
+  outline: none;
+}
+
+.source-holder a.etix{
+  background-image:url(/images/sources/etix_icon.png);
+}
+
+.source-holder a.web{
+  background-image:url(/images/sources/web_icon.png);
+}
+
+.source-holder a.instagram{
+  background-size: 30px;
+  background-image:url(/images/sources/instagram_icon_black.png);
+}
+
+.source-holder a.soundcloud{
+  background-image:url(/images/sources/soundcloud_icon_black.png);
+}
+
+.source-holder a.facebook{
+  background-image:url(/images/sources/facebook_icon_black.png);
+}
+
+.source-holder a.twitter{
+  background-size: 28px;
+  background-image:url(/images/sources/twitter_icon_black.png);
+}
+
+.source-holder a.sovi, .input-group-addon.sovi{
+  background-image:url(/images/sources/sovi_icon.png);
+}
+
+.source-holder a.ticket_evolution, .input-group-addon.ticket_evolution{
+  background-image:url(/images/sources/ticket_evolution_icon.png);
+}
+
+.source-holder a.ticket_network, .input-group-addon.ticket_network{
+  background-image:url(/images/sources/ticket_network_icon.png);
+}
+
+.source-holder a.ticket_fly{
+  background-image:url(/images/sources/ticket_fly_icon_black.png);
+}
+
+.source-holder a.stub_hub, .input-group-addon.stub_hub{
+  background-image:url(/images/sources/stub_hub_icon_black.png);
+}
+
+.source-holder a.vivid_seats{
+  background-image:url(/images/sources/vivid_seats_icon_black.png);
+}
+
+.source-holder a.event_brite{
+  background-image:url(/images/sources/event_brite_icon.png);
+}
+
+.source-holder a.axs{
+  background-image:url(/images/sources/axs_icon.png);
+}
+
+.source-holder a.ticket_master{
+  background-image:url(/images/sources/ticket_master_icon_black.png);
+}
+
+.source-holder a.ticket_web{
+  background-image:url(/images/sources/ticket_web_icon.jpeg);
+}
+
+.source-holder a.front_gate{
+  background-image:url(/images/sources/front_gate_icon.png);
+}
+
+.credit-card {
+  background-image: url(/images/cards.jpg);
+  background-size: 400px 300px;
+  background-repeat: no-repeat;
+  float:left;
+  height: 34px;
+  width: 48px;
+  border-radius: 4px;
+  color: transparent;
+  padding: 10px 13px;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+.credit-summary{
+  padding:5px 10px;
+  float:left;
+}
+
+.credit-card.lg{
+  background-size: 800px 600px;
+  height: 68px;
+  width: 96px;
+}
+
+.credit-card.sm{
+  background-size: 200px 150px;
+}
+
+.credit-card.mini{
+  background-size: 100px 75px;
+}
+
+.credit-card.visa{
+    background-position: -40px -52px;
+}
+
+.credit-card.visa.lg{
+    background-position: -80px -104px;
+}
+
+.credit-card.mastercard{
+    background-position: -108px -52px;
+}
+
+.credit-card.mastercard.lg{
+    background-position: -216px -104px;
+}
+
+.credit-card.amex{
+  background-position: -108px -52px;
+}
+
+.credit-card.amex.lg{
+  background-position: -216px -104px;
+}
+
+.credit-card.discover{
+  background-position: -175px -52px;
+}
+
+.credit-card.discover.lg{
+  background-position: -352px -104px;
+}
+
+.credit-card.bitcoin{
+  background-position: -312px -52px;
+}
+
+.credit-card.bitcoin.lg{
+  background-position: -624px -104px;
+}
+
+.credit-card.amex{
+  background-position: -40px -106px;
+}
+
+.credit-card.amex.lg{
+  background-position: -80px -212px;
+}
+
+.credit-card.apple_pay{
+  background-position: -113px -106px;
+}
+
+.credit-card.apple_pay.lg{
+  background-position: -216px -212px;
+}
+
+.credit-card.amazon{
+  background-position: -176px -106px;
+}
+
+.credit-card.amazon.lg{
+  background-position: -352px -212px;
+}
+
+.credit-card.paypal{
+  background-position: -312px -106px;
+}
+
+.credit-card.paypal.lg{
+  background-position: -624px -212px;
+}
