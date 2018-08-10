@@ -30,9 +30,6 @@ class navybar extends Component {
   }
   
   render() {
-  
-    const { theme, dropdownOpen } = this.state;
-    const themeClass = theme ? theme.toLowerCase() : 'secondary';
     
     return (
       <div>
