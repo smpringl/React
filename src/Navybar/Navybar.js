@@ -33,14 +33,11 @@ class navybar extends Component {
     
     return (
       <div>
-        <Navbar color="light" light expand="md" className="mb-3">
-          <NavbarBrand href="/">SO Tracker</NavbarBrand>
+        <Navbar color="light" light expand="md" className="mb-3 pl-4 pr-4" fixed-top>
+          <NavbarBrand href="/"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/sovi-image-assets/Sellout-Tracker.png" height="30"/></a></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
               <NavItem>
                 <NavLink href="/components/">Contact</NavLink>
               </NavItem>
@@ -50,14 +47,14 @@ class navybar extends Component {
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    Profile
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    Billing
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                    Subscription
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

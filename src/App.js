@@ -16,10 +16,10 @@ class App extends Component {
       <Navybar />
       <Container fluid>
         <Row>
-          <Col xs="1">
+          <Col xs="2">
           	<Leftpanel />
           </Col>
-          <Col xs="11">
+          <Col xs="10">
           	<Maintable />
           </Col>
         </Row>

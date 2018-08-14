@@ -55,7 +55,7 @@ body.signup {
   padding-right: 0px; }
 
 .navbar .navbar-brand img {
-  max-width: 75px; }
+  /*  max-width: 75px;*/ }
 
 .navbar .form-control {
   min-width: 300px;

@@ -1,0 +1,9 @@
+.panel .nav-link.active {
+	color:#000;
+	background-color: #f8f9fa;
+}
+
+.panel .nav-link {
+	color:#000;
+	font-weight: bold;
+}
