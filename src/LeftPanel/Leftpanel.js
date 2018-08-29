@@ -9,9 +9,9 @@ class leftpanel extends Component {
   render() {
     
     return (
-      <div className="panel">
+      <div className="panel text-center text-uppercase">
       	<Nav vertical pills>
-          <NavItem>
+          <NavItem className="mb-2">
             <NavLink active href="#">Tracker</NavLink>
           </NavItem>
           <NavItem>

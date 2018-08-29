@@ -4,7 +4,8 @@ import './App.css';
 import Navybar from './Navybar/Navybar';
 import Leftpanel from './LeftPanel/Leftpanel';
 import Maintable from './MainTable/Maintable';
-import { Button } from 'reactstrap';
+import Filter from './Filter/Filter';
+import Statframe from './Statframe/Statframe';
 import { Container, Row, Col } from 'reactstrap';
 
 class App extends Component {
@@ -14,14 +15,21 @@ class App extends Component {
    return (
       <div>
       <Navybar />
-      <Container fluid>
+      <Filter />
+      <Container fluid className="mt-3">
         <Row>
-          <Col xs="2">
-          	<Leftpanel />
-          </Col>
-          <Col xs="10">
+          <Col md="12">
           	<Maintable />
           </Col>
+        </Row>
+        <Row className="pt-4">
+	    	<Col md="2">
+	    	</Col>
+	    	<Col md="8">
+	    		<Statframe />
+	    	</Col>
+	    	<Col md="2">
+	    	</Col>
         </Row>
       </Container>
       </div>

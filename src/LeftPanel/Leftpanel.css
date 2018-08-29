@@ -1,9 +1,11 @@
 .panel .nav-link.active {
-	color:#000;
-	background-color: #f8f9fa;
+	background-color: #FA0D1C;
 }
 
 .panel .nav-link {
 	color:#000;
 	font-weight: bold;
+	font-size: 12px;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+	border-radius: 0px;
 }

@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import './Navybar.css';
 import {
   Collapse,
   Navbar,
@@ -33,10 +34,10 @@ class navybar extends Component {
     
     return (
       <div>
-        <Navbar color="light" light expand="md" className="mb-3 pl-4 pr-4" fixed-top>
+        <Navbar light expand="md" className="mb-0 pl-4 pr-4 border-bottom white" fixed-top>
           <NavbarBrand href="/"><a href="#"><img src="https://s3-us-west-2.amazonaws.com/sovi-image-assets/Sellout-Tracker.png" height="30"/></a></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
+          <Collapse isOpen={this.state.collapsed} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink href="/components/">Contact</NavLink>
