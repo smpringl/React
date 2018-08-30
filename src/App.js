@@ -23,12 +23,12 @@ class App extends Component {
           </Col>
         </Row>
         <Row className="pt-4">
-	    	<Col md="2">
+	    	<Col md="3">
 	    	</Col>
-	    	<Col md="8">
+	    	<Col md="6">
 	    		<Statframe />
 	    	</Col>
-	    	<Col md="2">
+	    	<Col md="3">
 	    	</Col>
         </Row>
       </Container>

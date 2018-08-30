@@ -13,14 +13,14 @@ class statframe extends Component {
         <div className="headerblock border-bottom dark p-2 pt-3">
           <Container fluid>
             <Row>
-              <Col md="6">
+              <Col md="8">
                 <h6 className="mb-1">Lord Huron</h6>
                 <p className="smallheaderitem m-0">McMenamin's Crystall Ballroom, Portland, OR</p>
                 <p className="smallheaderitem">Saturday 8/8 at 9:00pm</p>
               </Col>
-              <Col md="6" className="text-right pt-2">
-                <Button outline color="dark" className="mr-1">Follow</Button>{' '}
-                <Button outline color="dark">Get Tickets</Button>{' '}
+              <Col md="4" className="text-right pt-2">
+                <Button outline color="dark" className="mr-1" size="sm">Follow</Button>{' '}
+                <Button color="info" size="sm">Get Tickets</Button>{' '}
               </Col>
             </Row>
           </Container>
@@ -46,6 +46,15 @@ class statframe extends Component {
             <Row>
               <Col md="12">
                 <img src="https://s3-us-west-2.amazonaws.com/sovi-image-assets/graph-ss.png" width="100%"/>
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <div className="headerblock border-top dark p-2 pt-3">
+          <Container fluid>
+            <Row>
+              <Col md="12" className="text-right pb-2">
+                <Button color="danger" size="sm">Close</Button>{' '}
               </Col>
             </Row>
           </Container>
