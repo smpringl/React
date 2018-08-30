@@ -9,7 +9,7 @@ class statframe extends Component {
   render() {
     
     return (
-      <div className="globalstatframe">
+      <div className="globalstatframe mb-4">
         <div className="headerblock border-bottom dark p-2 pt-3">
           <Container fluid>
             <Row>
@@ -41,6 +41,11 @@ class statframe extends Component {
               </Col>
               <Col md="4">
                 <Statblock />
+              </Col>
+            </Row>
+            <Row>
+              <Col md="12">
+                <img src="https://s3-us-west-2.amazonaws.com/sovi-image-assets/graph-ss.png" width="100%"/>
               </Col>
             </Row>
           </Container>
